@@ -7,6 +7,7 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, useRef } from "react";
 import { initLenis } from "../lib/lenis";
+import WhatsAppFloatingButton from "../components/WhatsAppFloatingButton";
 
 function NotFoundComponent() {
   return (
@@ -98,6 +99,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
+      <WhatsAppFloatingButton />
     </QueryClientProvider>
   );
 }

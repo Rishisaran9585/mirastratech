@@ -70,7 +70,7 @@ const OTHER_PROJECTS = [
   },
   { name: "Medai The Stage", cat: "Entertainment & Creative", url: "https://medaithestage.com/" },
   { name: "Kinngs Network", cat: "Media & Networking", url: "https://kinngsnetwork.com/" },
-  { name: "Aerosafe Tours & Travel", cat: "Travel & Tourism", url: "https://aerosafetours.com/" },
+  { name: "Just In Travels", cat: "Travel & Tourism", url: "https://justintravels.in/" },
   {
     name: "First Dream Destination Tours",
     cat: "Travel & Tourism",
@@ -524,12 +524,12 @@ export default function ServicesPortfolioContact() {
                     </span>
                   </a>
                   <a
-                    href="tel:+919047432540"
+                    href="tel:+917871873038"
                     className="px-6 py-4 flex items-center hover:bg-black/5 transition-colors duration-200 cursor-pointer"
                   >
                     <Phone className="text-black w-5 h-5 mr-3" />
                     <span className="text-xs text-black uppercase font-bold tracking-widest">
-                      +91 90474 32540
+                      +91 78718 73038
                     </span>
                   </a>
                 </div>

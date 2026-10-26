@@ -1137,7 +1137,7 @@ function About() {
                 <ArrowUpRight size={22} />
               </a>
               <a
-                href="https://wa.me/919047432540"
+                href="https://wa.me/917871873038"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-14 h-14 rounded-[16px] bg-[#1c1c1e] border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/8 hover:border-white/20 transition-all duration-200"

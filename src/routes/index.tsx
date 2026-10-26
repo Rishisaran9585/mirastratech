@@ -137,7 +137,7 @@ function Index() {
               <div className="inline-flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] backdrop-blur-md rounded-full px-4 py-1.5 mb-6 shadow-xl">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#bfff00] animate-pulse flex-shrink-0" />
                 <span className="text-white/60 text-[10px] font-mono tracking-[0.15em] uppercase">
-                  +14 active client projects
+                  +25 active client projects
                 </span>
               </div>
             </FadeContent>
@@ -416,7 +416,7 @@ function Index() {
                   <ArrowUpRight size={13} className="text-white" />
                 </div>
                 <div className="relative z-10">
-                  <span className="text-5xl font-bold text-black leading-none block">14+</span>
+                  <span className="text-5xl font-bold text-black leading-none block">25+</span>
                   <span className="text-xs text-black/55 mt-1 block leading-snug">projects<br />launched</span>
                 </div>
               </div>
@@ -823,15 +823,15 @@ function Index() {
 
           {/* Card 6 — Pure screenshot (light grey) */}
           <a
-            href="https://aerosafetours.com/"
+            href="https://firstdreamdestinations.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative rounded-[24px] overflow-hidden bg-[#f0f0ee] flex flex-col min-h-[420px] decoration-none cursor-pointer hover:scale-[1.015] transition-transform duration-300"
           >
             <div className="flex-1 m-3 mb-0 rounded-[16px] overflow-hidden">
               <img
-                src="/website/Aerosafe.png"
-                alt="Aero Safe Tours"
+                src="/screenshots/firstdreamdestinations.png"
+                alt="First Dream Destinations"
                 className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
               />
             </div>
@@ -1320,7 +1320,7 @@ function Index() {
                 <ArrowUpRight size={22} />
               </a>
               <a
-                href="https://wa.me/919047432540"
+                href="https://wa.me/917871873038"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-14 h-14 rounded-[16px] bg-[#1c1c1e] border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/8 hover:border-white/20 transition-all duration-200"

@@ -44,7 +44,7 @@ const SplitText: React.FC<SplitTextProps> = ({
       clipPath: "inset(0 0 0% 0)",
       transition: {
         duration,
-        ease,
+        ease: ease as any,
       },
     },
   };

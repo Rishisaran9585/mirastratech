@@ -37,6 +37,7 @@ function Contact() {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
+    phone: "",
     projectType: "Website",
     budget: "₹10,000 - ₹25,000",
     message: "",
@@ -50,7 +51,7 @@ function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formState.name || !formState.email || !formState.message) {
+    if (!formState.name || !formState.email || !formState.phone || !formState.message) {
       setStatus("error");
       setTimeout(() => setStatus("idle"), 3000);
       return;
@@ -70,6 +71,7 @@ function Contact() {
           access_key: accessKey,
           name: formState.name,
           email: formState.email,
+          phone: formState.phone,
           project_type: formState.projectType,
           budget: formState.budget,
           message: formState.message,
@@ -85,6 +87,7 @@ function Contact() {
         setFormState({
           name: "",
           email: "",
+          phone: "",
           projectType: "Website",
           budget: "₹10,000 - ₹25,000",
           message: "",
@@ -290,7 +293,7 @@ function Contact() {
 
               {/* Card 2: Phone */}
               <a
-                href="tel:+919047432540"
+                href="tel:+917871873038"
                 className="bg-white/5 border border-white/10 hover:border-purple-500/30 hover:bg-purple-500/5 rounded-2xl p-4 flex items-center gap-4 transition-all group decoration-none text-white cursor-pointer"
               >
                 <div className="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 group-hover:bg-purple-500/20 group-hover:text-white transition-all">
@@ -300,7 +303,7 @@ function Contact() {
                   <h4 className="text-[10px] text-white/40 uppercase font-mono tracking-wider">
                     Call Us
                   </h4>
-                  <p className="text-xs sm:text-sm font-bold mt-0.5 font-mono">+91 90474 32540</p>
+                  <p className="text-xs sm:text-sm font-bold mt-0.5 font-mono">+91 78718 73038</p>
                 </div>
               </a>
 
@@ -380,19 +383,35 @@ function Contact() {
                     />
                   </div>
 
-                  {/* Email Input */}
-                  <div className="flex flex-col gap-1.5">
-                    <label className="text-[10px] text-white/50 uppercase font-mono tracking-widest">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      placeholder="e.g. liam@company.com"
-                      value={formState.email}
-                      onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                      className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:border-sky-500 focus:outline-none transition-colors"
-                      required
-                    />
+                  {/* Email & Phone Inputs */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="flex flex-col gap-1.5">
+                      <label className="text-[10px] text-white/50 uppercase font-mono tracking-widest">
+                        Email Address *
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="e.g. liam@company.com"
+                        value={formState.email}
+                        onChange={(e) => setFormState({ ...formState, email: e.target.value })}
+                        className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:border-sky-500 focus:outline-none transition-colors"
+                        required
+                      />
+                    </div>
+
+                    <div className="flex flex-col gap-1.5">
+                      <label className="text-[10px] text-white/50 uppercase font-mono tracking-widest">
+                        Phone Number *
+                      </label>
+                      <input
+                        type="tel"
+                        placeholder="e.g. +91 78718 73038"
+                        value={formState.phone}
+                        onChange={(e) => setFormState({ ...formState, phone: e.target.value })}
+                        className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-xs sm:text-sm text-white focus:border-sky-500 focus:outline-none transition-colors"
+                        required
+                      />
+                    </div>
                   </div>
 
                   {/* Project Type Dropdown */}
@@ -668,7 +687,7 @@ function Contact() {
                 <ArrowUpRight size={22} />
               </a>
               <a
-                href="https://wa.me/919047432540"
+                href="https://wa.me/917871873038"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-14 h-14 rounded-[16px] bg-[#1c1c1e] border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/8 hover:border-white/20 transition-all duration-200"

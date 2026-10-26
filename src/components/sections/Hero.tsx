@@ -160,7 +160,7 @@ export default function Hero() {
                     Clients Launched
                   </p>
                   <p className="text-3xl font-extrabold text-black tracking-tight leading-none">
-                    14+
+                    25+
                   </p>
                 </div>
               </div>
