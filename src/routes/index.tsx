@@ -691,156 +691,127 @@ function Index() {
           </div>
         </div>
       </section>
-      {/* 5. FEATURED WORKS SECTION */}
+      {/* 5. TRACK RECORD & DELIVERY METRICS */}
       <section className="w-full bg-white text-black relative overflow-hidden py-24 px-6 sm:px-12 md:px-20 border-t border-black/8">
 
         {/* ── Centered headline ── */}
         <div className="text-center mb-16 max-w-4xl mx-auto">
           <span className="inline-flex items-center gap-2 text-[10px] font-mono uppercase tracking-[0.3em] text-black/40 border border-black/12 rounded-full px-4 py-1.5 mb-6">
             <span className="w-1 h-1 rounded-full bg-[#3a8cd7] inline-block" />
-            Selected Works
+            Track Record &bull; By The Numbers
           </span>
           <h2 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.0] text-black">
-            We've built digital<br />
-            <span className="text-black/25">products clients love</span>
+            25+ Websites Delivered.<br />
+            <span className="text-black/25">Built beyond limits.</span>
           </h2>
+          <p className="mt-4 text-black/60 uppercase tracking-[0.22em] leading-[1.4] text-xs font-mono">
+            VERIFIED PRODUCTION BUILDS &bull; GLOBAL CLIENT FOOTPRINT
+          </p>
         </div>
 
-        {/* ── Row 1: 3 cards ── */}
+        {/* ── Project Counts Grid ── */}
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
 
-          {/* Card 1 — Pure screenshot card (dark frame) */}
-          <a
-            href="https://aghoraengineeringconsultants.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative rounded-[24px] overflow-hidden bg-[#111a10] flex flex-col min-h-[460px] decoration-none cursor-pointer hover:scale-[1.015] transition-transform duration-300"
-          >
-            <div className="flex-1 m-3 mb-0 rounded-[16px] overflow-hidden">
-              <img
-                src="/website/AEC.png"
-                alt="Aghora Engineering Consultants"
-                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="flex items-center justify-between px-5 py-4">
-              <div className="w-8 h-8 rounded-full bg-white/10 border border-white/15 flex-shrink-0 flex items-center justify-center group-hover:bg-[#bfff00] group-hover:border-[#bfff00] transition-all duration-300">
-                <ArrowUpRight size={14} className="text-white group-hover:text-black transition-colors" />
+          {/* Card 1 — Websites Count */}
+          <div className="relative rounded-[24px] overflow-hidden bg-[#111a10] text-white p-8 flex flex-col justify-between min-h-[340px]">
+            <div>
+              <span className="text-[10px] font-mono uppercase tracking-widest text-[#bfff00] font-semibold">MILESTONE 01</span>
+              <div className="text-6xl sm:text-7xl font-black text-white tracking-tight leading-none mt-4 font-mono">
+                25+
               </div>
+              <h3 className="text-2xl font-black text-white mt-3 leading-snug">Websites Done &amp; Launched</h3>
+              <p className="text-white/50 text-xs leading-relaxed mt-2">
+                Engineered for conversion, speed, and cross-device responsiveness across e-commerce, corporate, and SaaS verticals.
+              </p>
             </div>
-          </a>
+            <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-emerald-400">
+              <span className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" /> Delivered Worldwide
+              </span>
+              <span className="text-white/40">100% Custom Code</span>
+            </div>
+          </div>
 
-          {/* Card 2 — Pure screenshot card (lime bg frame) */}
-          <a
-            href="https://lishansarees.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative rounded-[24px] overflow-hidden bg-[#bfff00] flex flex-col min-h-[460px] decoration-none cursor-pointer hover:scale-[1.015] transition-transform duration-300"
-          >
-            {/* screenshot fills most of card */}
-            <div className="flex-1 m-3 mb-0 rounded-[16px] overflow-hidden">
-              <img
-                src="/website/Lishan sarees.png"
-                alt="Lishan Sarees Store"
-                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            {/* clean label strip */}
-            <div className="flex items-center justify-between px-5 py-4">
-              <div className="w-8 h-8 rounded-full bg-black flex-shrink-0 flex items-center justify-center">
-                <ArrowUpRight size={14} className="text-[#bfff00]" />
+          {/* Card 2 — Extensions & Automation Count */}
+          <div className="relative rounded-[24px] overflow-hidden bg-[#bfff00] text-black p-8 flex flex-col justify-between min-h-[340px]">
+            <div>
+              <span className="text-[10px] font-mono uppercase tracking-widest text-black/60 font-semibold">MILESTONE 02</span>
+              <div className="text-6xl sm:text-7xl font-black text-black tracking-tight leading-none mt-4 font-mono">
+                7+
               </div>
+              <h3 className="text-2xl font-black text-black mt-3 leading-snug">Automation Engines &amp; Tools</h3>
+              <p className="text-black/70 text-xs leading-relaxed mt-2">
+                Chrome &amp; Edge extensions, automated lead scrapers, social distribution queues, and custom workflow bots.
+              </p>
             </div>
-          </a>
+            <div className="pt-4 border-t border-black/10 flex items-center justify-between text-xs font-mono text-black/70">
+              <span className="flex items-center gap-1.5 font-bold">
+                <span className="w-2 h-2 rounded-full bg-black" /> Active Tools
+              </span>
+              <span className="text-black/60 font-semibold">Production Ready</span>
+            </div>
+          </div>
 
-          {/* Card 3 — Pure screenshot card (light grey frame) */}
-          <a
-            href="https://ieltshorizon.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative rounded-[24px] overflow-hidden bg-[#f0f0ee] flex flex-col min-h-[460px] decoration-none cursor-pointer hover:scale-[1.015] transition-transform duration-300"
-          >
-            <div className="flex-1 m-3 mb-0 rounded-[16px] overflow-hidden">
-              <img
-                src="/website/ielts.png"
-                alt="IELTS Horizon Training"
-                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="flex items-center justify-between px-5 py-4">
-              <div className="w-8 h-8 rounded-full bg-black flex-shrink-0 flex items-center justify-center group-hover:bg-[#3a8cd7] transition-colors duration-300">
-                <ArrowUpRight size={14} className="text-white" />
+          {/* Card 3 — On-Time SLA */}
+          <div className="relative rounded-[24px] overflow-hidden bg-[#f0f0ee] text-black p-8 flex flex-col justify-between min-h-[340px] border border-black/8">
+            <div>
+              <span className="text-[10px] font-mono uppercase tracking-widest text-black/40 font-semibold">MILESTONE 03</span>
+              <div className="text-6xl sm:text-7xl font-black text-black tracking-tight leading-none mt-4 font-mono">
+                100%
               </div>
+              <h3 className="text-2xl font-black text-black mt-3 leading-snug">On-Time SLA Delivery</h3>
+              <p className="text-black/60 text-xs leading-relaxed mt-2">
+                Two-week agile sprints keep delivery fast and transparent. You always know what ships next and exactly when.
+              </p>
             </div>
-          </a>
+            <div className="pt-4 border-t border-black/8 flex items-center justify-between text-xs font-mono text-black/60">
+              <span className="flex items-center gap-1.5 text-emerald-600 font-semibold">
+                <span className="w-2 h-2 rounded-full bg-emerald-500" /> On-Schedule
+              </span>
+              <span className="text-black/40">Zero Bottlenecks</span>
+            </div>
+          </div>
 
         </div>
 
-        {/* ── Row 2: 3 cards ── */}
+        {/* ── Row 2: 3 Domain & Architecture Highlights ── */}
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
 
-          {/* Card 4 — Pure screenshot (light grey) */}
-          <a
-            href="https://medaithestage.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative rounded-[24px] overflow-hidden bg-[#f0f0ee] flex flex-col min-h-[420px] decoration-none cursor-pointer hover:scale-[1.015] transition-transform duration-300"
-          >
-            <div className="flex-1 m-3 mb-0 rounded-[16px] overflow-hidden">
-              <img
-                src="/website/medai.png"
-                alt="Medai The Stage"
-                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-              />
+          <div className="rounded-[24px] overflow-hidden bg-[#f7f7f5] p-7 border border-black/8 flex flex-col justify-between">
+            <span className="text-[10px] font-mono uppercase tracking-wider text-black/40">Domain Spread</span>
+            <div className="my-4">
+              <div className="text-4xl font-black text-black font-mono">10+</div>
+              <h4 className="text-lg font-bold text-black mt-1">Industry Sectors</h4>
+              <p className="text-black/50 text-xs mt-1.5 leading-relaxed">
+                Travel, MedTech, Fashion, Exports, EdTech, Real Estate, and AI platforms.
+              </p>
             </div>
-            <div className="flex items-center justify-between px-5 py-4">
-              <div className="w-8 h-8 rounded-full bg-black flex-shrink-0 flex items-center justify-center group-hover:bg-[#bfff00] transition-colors duration-300">
-                <ArrowUpRight size={14} className="text-white group-hover:text-black transition-colors" />
-              </div>
-            </div>
-          </a>
+            <span className="text-[10px] font-mono text-black/40">Universal Architecture</span>
+          </div>
 
-          {/* Card 5 — Pure screenshot (dark frame) */}
-          <a
-            href="https://kinngsnetwork.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative rounded-[24px] overflow-hidden bg-[#111111] flex flex-col min-h-[420px] decoration-none cursor-pointer hover:scale-[1.015] transition-transform duration-300"
-          >
-            <div className="flex-1 m-3 mb-0 rounded-[16px] overflow-hidden">
-              <img
-                src="/website/kinngs.png"
-                alt="Kinngs Network"
-                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-              />
+          <div className="rounded-[24px] overflow-hidden bg-[#111111] text-white p-7 border border-white/10 flex flex-col justify-between">
+            <span className="text-[10px] font-mono uppercase tracking-wider text-white/40">Delivery Standard</span>
+            <div className="my-4">
+              <div className="text-4xl font-black text-white font-mono">3–7 Days</div>
+              <h4 className="text-lg font-bold text-white mt-1">Fast Launch Speed</h4>
+              <p className="text-white/50 text-xs mt-1.5 leading-relaxed">
+                Static and animated websites delivered in record time with full post-launch support.
+              </p>
             </div>
-            <div className="flex items-center justify-between px-5 py-4">
-              <div className="w-8 h-8 rounded-full bg-white/10 border border-white/15 flex-shrink-0 flex items-center justify-center group-hover:bg-[#bfff00] group-hover:border-[#bfff00] transition-all duration-300">
-                <ArrowUpRight size={14} className="text-white group-hover:text-black transition-colors" />
-              </div>
-            </div>
-          </a>
+            <span className="text-[10px] font-mono text-emerald-400">High Velocity</span>
+          </div>
 
-          {/* Card 6 — Pure screenshot (light grey) */}
-          <a
-            href="https://firstdreamdestinations.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative rounded-[24px] overflow-hidden bg-[#f0f0ee] flex flex-col min-h-[420px] decoration-none cursor-pointer hover:scale-[1.015] transition-transform duration-300"
-          >
-            <div className="flex-1 m-3 mb-0 rounded-[16px] overflow-hidden">
-              <img
-                src="/screenshots/firstdreamdestinations.png"
-                alt="First Dream Destinations"
-                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-              />
+          <div className="rounded-[24px] overflow-hidden bg-[#f7f7f5] p-7 border border-black/8 flex flex-col justify-between">
+            <span className="text-[10px] font-mono uppercase tracking-wider text-black/40">Code Standard</span>
+            <div className="my-4">
+              <div className="text-4xl font-black text-black font-mono">100%</div>
+              <h4 className="text-lg font-bold text-black mt-1">Full Source Ownership</h4>
+              <p className="text-black/50 text-xs mt-1.5 leading-relaxed">
+                Zero templates, zero vendor lock-in. You retain 100% intellectual property.
+              </p>
             </div>
-            <div className="flex items-center justify-between px-5 py-4">
-              <div className="w-8 h-8 rounded-full bg-black flex-shrink-0 flex items-center justify-center group-hover:bg-[#3a8cd7] transition-colors duration-300">
-                <ArrowUpRight size={14} className="text-white" />
-              </div>
-            </div>
-          </a>
+            <span className="text-[10px] font-mono text-black/40">Enterprise Standard</span>
+          </div>
 
         </div>
 
@@ -850,7 +821,7 @@ function Index() {
             to="/works"
             className="group inline-flex items-center gap-3 bg-black hover:bg-zinc-800 text-white text-sm font-bold px-10 py-4 rounded-full tracking-wider uppercase decoration-none cursor-pointer transition-all duration-300"
           >
-            View More Works
+            Explore All Works &amp; Extensions
             <div className="w-6 h-6 rounded-full bg-white/15 group-hover:bg-[#bfff00] flex items-center justify-center transition-all duration-300">
               <ArrowUpRight size={13} className="text-white group-hover:text-black transition-colors" />
             </div>
@@ -858,7 +829,6 @@ function Index() {
         </div>
 
       </section>
-
       {/* 6. TECH STACK SECTION */}
       <section className="w-full bg-white py-20 px-6 sm:px-12 md:px-20 border-t border-black/8 overflow-hidden">
         <div className="max-w-3xl mx-auto text-center mb-10">

@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import Nav from "../components/Nav";
 import React, { useState, useEffect } from "react";
-import { ArrowUpRight, Laptop, Code, Zap, Star, CheckCircle, Globe, Puzzle, ExternalLink, Sparkles, Layers } from "lucide-react";
+import { ArrowUpRight, Laptop, Code, Zap, Star, CheckCircle, Puzzle, Globe, ShieldCheck } from "lucide-react";
 import Antigravity from "../components/reactbits/Antigravity";
 import SplitText from "../components/reactbits/SplitText";
 import FadeContent from "../components/reactbits/FadeContent";
@@ -14,230 +14,11 @@ export const Route = createFileRoute("/works")({
   head: () => ({
     meta: [
       { title: "Our Works — Mirastra Tech" },
-      { name: "description", content: "Browse our portfolio of custom software, websites, SaaS projects, and mobile applications built by Mirastra Tech." },
+      { name: "description", content: "Explore our delivery track record: 25+ custom websites launched and 7+ proprietary browser extensions and automation tools built by Mirastra Tech." },
     ],
   }),
   component: Works,
 });
-
-const WEBSITES_PORTFOLIO = [
-  {
-    title: "First Dream Destinations",
-    category: "Travel & Tours",
-    filterGroup: "Travel & Tourism",
-    url: "https://firstdreamdestinations.com/",
-    displayUrl: "firstdreamdestinations.com",
-    desc: "Luxury international tour curator, custom holiday packages, honeymoon travels, and global flight bookings.",
-    img: "/screenshots/firstdreamdestinations.png",
-  },
-  {
-    title: "Evergreen Industry",
-    category: "Sustainable Packaging",
-    filterGroup: "Industrial & Trade",
-    url: "https://evergreenindustry.com/",
-    displayUrl: "evergreenindustry.com",
-    desc: "Eco-friendly, biodegradable manufacturing and sustainable industrial packaging solutions worldwide.",
-    img: "/screenshots/evergreenindustry.png",
-  },
-  {
-    title: "Stretch Wheels",
-    category: "Healthcare & MedTech",
-    filterGroup: "Healthcare & MedTech",
-    url: "https://stretchwheels.com/",
-    displayUrl: "stretchwheels.com",
-    desc: "Reinventing ergonomic patient transfer mobility and modern hospital transport equipment.",
-    img: "/screenshots/stretchwheels.png",
-  },
-  {
-    title: "Just In Travels",
-    category: "Luxury Travel",
-    filterGroup: "Travel & Tourism",
-    url: "https://justintravels.in/",
-    displayUrl: "justintravels.in",
-    desc: "Bespoke South India private journeys, temple trails, hill station retreats, and private luxury chauffeur tours.",
-    img: "/screenshots/justintravels.png",
-  },
-  {
-    title: "Diyaa Holidays",
-    category: "Tours & Travel",
-    filterGroup: "Travel & Tourism",
-    url: "https://diyaaholidays.com/",
-    displayUrl: "diyaaholidays.com",
-    desc: "Curated vacation packages, pilgrimage journeys, family vacation itineraries, and honeymoon getaways.",
-    img: "/screenshots/diyaaholidays.png",
-  },
-  {
-    title: "Dev Krishna Tex",
-    category: "Textile & Garments",
-    filterGroup: "E-Commerce & Fashion",
-    url: "https://devkrishnatex.in/",
-    displayUrl: "devkrishnatex.in",
-    desc: "Leading wholesale textile manufacturer, bulk fabric distribution, and traditional & modern attire supplies.",
-    img: "/screenshots/devkrishnatex.png",
-  },
-  {
-    title: "MR Import & Exports",
-    category: "Global Trade",
-    filterGroup: "Industrial & Trade",
-    url: "https://mrimportandexports.com/",
-    displayUrl: "mrimportandexports.com",
-    desc: "Worldwide commercial trade partner, bulk wholesale commodities, and cross-border import-export operations.",
-    img: "/screenshots/mrimportandexports.png",
-  },
-  {
-    title: "Proactive Physiotherapy",
-    category: "Healthcare & Rehab",
-    filterGroup: "Healthcare & MedTech",
-    url: "https://proactivept.in/",
-    displayUrl: "proactivept.in",
-    desc: "Senior-led one-on-one sports rehabilitation, orthopedic recovery, and post-surgical physical therapy clinic.",
-    img: "/screenshots/proactivept.png",
-  },
-  {
-    title: "Reporter World",
-    category: "Digital Media & News",
-    filterGroup: "Media & EdTech",
-    url: "https://reporterworld.in/",
-    displayUrl: "reporterworld.in",
-    desc: "Real-time news coverage, political analysis, technology journalism, and breaking updates delivered instantly.",
-    img: "/screenshots/reporterworld.png",
-  },
-  {
-    title: "Zion Medicare",
-    category: "Medical Equipment",
-    filterGroup: "Healthcare & MedTech",
-    url: "https://zionmedicare.in/",
-    displayUrl: "zionmedicare.in",
-    desc: "Certified hospital-grade medical equipment sales, home healthcare rentals, and patient recovery support.",
-    img: "/screenshots/zionmedicare.png",
-  },
-  {
-    title: "Porko Construction & Estate",
-    category: "Real Estate & Architecture",
-    filterGroup: "Industrial & Trade",
-    url: "https://porkoconstructionestate.com/",
-    displayUrl: "porkoconstructionestate.com",
-    desc: "Turnkey residential and commercial construction, architectural blueprints, and prime real estate assets.",
-    img: "/screenshots/porkoconstructionestate.png",
-  },
-  {
-    title: "Nora Architectural Industries",
-    category: "Industrial & Architecture",
-    filterGroup: "Industrial & Trade",
-    url: "http://noraarchitecturalindustries.in/",
-    displayUrl: "noraarchitecturalindustries.in",
-    desc: "Architectural metal fabrication, facade structures, and precision engineering installations.",
-    img: "/screenshots/noraarchitecturalindustries.png",
-  },
-  {
-    title: "Lishan Sarees",
-    category: "E-Commerce & Fashion",
-    filterGroup: "E-Commerce & Fashion",
-    url: "https://lishansarees.com/",
-    displayUrl: "lishansarees.com",
-    desc: "Handcrafted luxury silk sarees, bridal Kanjivarams, and designer ethnic wear shopping.",
-    img: "/screenshots/lishansarees.png",
-  },
-  {
-    title: "Wizard IAS Academy",
-    category: "EdTech & Education",
-    filterGroup: "Media & EdTech",
-    url: "https://wizardias.in/",
-    displayUrl: "wizardias.in",
-    desc: "Premier civil services coaching academy, mock test series, expert mentorship, and online study ecosystem.",
-    img: "/screenshots/wizardias.png",
-  },
-  {
-    title: "Sarrahh Bridal Studio",
-    category: "Bridal & Haute Couture",
-    filterGroup: "E-Commerce & Fashion",
-    url: "https://sarrahh.in/",
-    displayUrl: "sarrahh.in",
-    desc: "Custom Aari hand embroidery, designer bridal blouses, and bespoke wedding couture appointments.",
-    img: "/screenshots/sarrahh.png",
-  },
-  {
-    title: "Mugai Technologies",
-    category: "Tech Agency & Cloud",
-    filterGroup: "Tech & SaaS",
-    url: "https://mugaitechnologies.in/",
-    displayUrl: "mugaitechnologies.in",
-    desc: "Digital technology studio crafting scalable cloud architectures, software engineering, and web systems.",
-    img: "/screenshots/mugaitechnologies.png",
-  },
-  {
-    title: "JORO IQ Platform",
-    category: "Automotive SaaS & AI",
-    filterGroup: "Tech & SaaS",
-    url: "https://jorosystems.com/",
-    displayUrl: "jorosystems.com",
-    desc: "Vehicle safety intelligence transforming real-world vehicle data into accident prevention insights.",
-    img: "/screenshots/jorosystems.png",
-  },
-  {
-    title: "Aghora Engineering",
-    category: "Corporate Engineering",
-    filterGroup: "Industrial & Trade",
-    url: "https://aghoraengineeringconsultants.com/",
-    displayUrl: "aghoraengineeringconsultants.com",
-    desc: "Consultancy and structural engineering audits for large-scale infrastructure and industrial projects.",
-    img: new URL("../wesbite/AEC.png", import.meta.url).href,
-  },
-  {
-    title: "IELTS Horizon",
-    category: "Global Education",
-    filterGroup: "Media & EdTech",
-    url: "https://ieltshorizon.com/",
-    displayUrl: "ieltshorizon.com",
-    desc: "Online training portal, exam simulations, and international language mastery programs.",
-    img: new URL("../wesbite/ielts.png", import.meta.url).href,
-  },
-  {
-    title: "Medai The Stage",
-    category: "Cultural & Events",
-    filterGroup: "Media & EdTech",
-    url: "https://medaithestage.com/",
-    displayUrl: "medaithestage.com",
-    desc: "Performing arts theater venue, booking platform, and creative festival production.",
-    img: new URL("../wesbite/medai.png", import.meta.url).href,
-  },
-  {
-    title: "Kinngs Network",
-    category: "Business Networking",
-    filterGroup: "Tech & SaaS",
-    url: "https://kinngsnetwork.com/",
-    displayUrl: "kinngsnetwork.com",
-    desc: "High-level business networking platform connecting founders, executives, and investors.",
-    img: new URL("../wesbite/kinngs.png", import.meta.url).href,
-  },
-  {
-    title: "Find You Counselling",
-    category: "Mental Health & Therapy",
-    filterGroup: "Healthcare & MedTech",
-    url: "https://findyoucounselling.com/",
-    displayUrl: "findyoucounselling.com",
-    desc: "Certified psychotherapy, emotional wellness counseling, and virtual therapy sessions.",
-    img: new URL("../wesbite/find you cousnelling center.png", import.meta.url).href,
-  },
-  {
-    title: "Tamil Oviyam",
-    category: "Arts & Culture",
-    filterGroup: "Media & EdTech",
-    url: "https://grey-boar-606830.hostingersite.com/",
-    displayUrl: "tamiloviyam.com",
-    desc: "Rich cultural publishing portal dedicated to classical Tamil heritage, literature, and art.",
-    img: new URL("../wesbite/tamil oviyam.png", import.meta.url).href,
-  },
-  {
-    title: "KleanKlub CRM",
-    category: "Enterprise CRM",
-    filterGroup: "Tech & SaaS",
-    url: "https://cornflowerblue-grasshopper-952998.hostingersite.com/",
-    displayUrl: "kleanklub.app",
-    desc: "Full-cycle customer relationship platform with automated invoicing and schedule workflows.",
-    img: new URL("../wesbite/KleanKlub crm.png", import.meta.url).href,
-  },
-];
 
 const EXTENSIONS = [
   {
@@ -305,31 +86,13 @@ const FEATURE_CARDS = [
   { title: "Art Direction", label: "Own the moment", img: "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=600&h=700&q=80" },
 ];
 
-const BRAND_IMAGES = [
-  "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&h=520&q=80",
-  "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&h=520&q=80",
-  "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&h=520&q=80",
-];
-
 function Works() {
-  const [activeTab, setActiveTab] = useState<"all" | "websites" | "extensions">("all");
-  const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedExtCategory, setSelectedExtCategory] = useState("All");
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
-
-  const CATEGORIES = [
-    "All",
-    "Travel & Tourism",
-    "Healthcare & MedTech",
-    "E-Commerce & Fashion",
-    "Tech & SaaS",
-    "Industrial & Trade",
-    "Media & EdTech",
-  ];
 
   const EXT_CATEGORIES = [
     "All",
@@ -341,10 +104,6 @@ function Works() {
     "Community Management",
     "Marketing & Lead Gen",
   ];
-
-  const filteredWebsites = selectedCategory === "All"
-    ? WEBSITES_PORTFOLIO
-    : WEBSITES_PORTFOLIO.filter((site) => site.filterGroup === selectedCategory);
 
   const filteredExtensions = selectedExtCategory === "All"
     ? EXTENSIONS
@@ -405,7 +164,7 @@ function Works() {
             <div className="inline-flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] backdrop-blur-md rounded-full px-4 py-1.5 mb-4">
               <span className="w-2 h-2 rounded-full bg-[#3a8cd7] animate-pulse" />
               <span className="text-white/60 text-[10px] font-mono tracking-[0.15em] uppercase">
-                PRODUCTION REGISTRY &amp; BUILDS
+                PRODUCTION REGISTRY &bull; 25+ WEBSITES DELIVERED
               </span>
             </div>
           </FadeContent>
@@ -434,7 +193,7 @@ function Works() {
 
             <FadeContent delay={0.3} y={15}>
               <p className="text-white/50 text-xs sm:text-sm leading-relaxed max-w-xl mt-3">
-                Explore our catalog of custom-built web systems, software architectures, chrome extensions, automation scripts, and conversion funnels deployed worldwide.
+                Explore our verified track record — over 25+ bespoke client websites built and deployed, alongside 7+ proprietary browser extensions and automated growth tools engineered worldwide.
               </p>
             </FadeContent>
 
@@ -450,19 +209,17 @@ function Works() {
                 </Link>
                 <button
                   onClick={() => {
-                    setActiveTab("websites");
-                    const el = document.getElementById("portfolio-tabs") || document.getElementById("projects");
+                    const el = document.getElementById("track-record");
                     el?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="bg-white/10 hover:bg-white/20 border border-white/15 text-white text-xs font-semibold px-6 py-3.5 rounded-full transition-all duration-300 cursor-pointer inline-flex items-center gap-2"
                 >
                   <Globe size={13} className="text-[#3a8cd7]" />
-                  Live Websites ({WEBSITES_PORTFOLIO.length})
+                  25+ Websites Done
                 </button>
                 <button
                   onClick={() => {
-                    setActiveTab("extensions");
-                    const el = document.getElementById("portfolio-tabs") || document.getElementById("extensions");
+                    const el = document.getElementById("extensions");
                     el?.scrollIntoView({ behavior: "smooth" });
                   }}
                   className="bg-[#bfff00]/20 hover:bg-[#bfff00]/30 border border-[#bfff00]/50 text-[#bfff00] text-xs font-bold px-6 py-3.5 rounded-full transition-all duration-300 cursor-pointer inline-flex items-center gap-2 shadow-[0_0_15px_rgba(191,255,0,0.15)]"
@@ -491,21 +248,21 @@ function Works() {
                         <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/50" />
                         <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/50" />
                       </div>
-                      <span className="text-[9px] font-mono text-white/35">src/App.tsx</span>
+                      <span className="text-[9px] font-mono text-white/35">registry/builds.ts</span>
                     </div>
                     <div className="font-mono text-[9px] text-white/50 space-y-1 mt-1">
-                      <p className="text-[#3a8cd7]">const deployment = &#123;</p>
-                      <p className="pl-3">client: "Worldwide",</p>
-                      <p className="pl-3">status: "100%_Success",</p>
-                      <p className="pl-3">onTime: true,</p>
+                      <p className="text-[#3a8cd7]">const trackRecord = &#123;</p>
+                      <p className="pl-3">websitesCompleted: "25+",</p>
+                      <p className="pl-3">automationTools: "7+",</p>
+                      <p className="pl-3">clientRetention: "85%",</p>
                       <p className="text-[#3a8cd7]">&#125;;</p>
                     </div>
                   </div>
                   <div className="pt-3 border-t border-white/[0.05] flex justify-between items-center text-[10px] text-white/35 font-mono">
-                    <span>STATUS</span>
+                    <span>TRACK RECORD</span>
                     <span className="text-emerald-400 flex items-center gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                      COMPILING
+                      VERIFIED
                     </span>
                   </div>
                 </SpotlightCard>
@@ -520,25 +277,32 @@ function Works() {
                   spotlightColor="rgba(58, 140, 215, 0.08)"
                 >
                   <div>
-                    <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center justify-between mb-3">
                       <div className="w-10 h-10 rounded-xl bg-[#3a8cd7]/10 flex items-center justify-center text-[#3a8cd7]">
                         <CheckCircle size={18} />
                       </div>
-                      <span className="text-[9px] font-mono text-white/40 tracking-wider">OUTCOMES</span>
+                      <span className="text-[9px] font-mono text-white/40 tracking-wider">DELIVERED</span>
                     </div>
                     <div className="flex items-baseline gap-1 mt-1">
                       <span className="text-3xl font-black text-white leading-none tracking-tight">
-                        <CountUp to={31} duration={1400} />+
+                        <CountUp to={32} duration={1400} />+
                       </span>
-                      <span className="text-[10px] text-white/40 font-mono">LIVE BUILDS</span>
+                      <span className="text-[10px] text-white/40 font-mono">TOTAL BUILDS</span>
                     </div>
-                    <p className="text-white/45 text-[11px] leading-relaxed mt-2">
-                      Successfully delivered scalable systems, from startup MVPs to enterprise platforms.
-                    </p>
+                    <div className="mt-2.5 space-y-1 text-[11px] font-mono text-white/60">
+                      <p className="flex items-center justify-between">
+                        <span>Websites Built:</span>
+                        <span className="text-[#bfff00] font-bold">25+ Done</span>
+                      </p>
+                      <p className="flex items-center justify-between">
+                        <span>Automation Tools:</span>
+                        <span className="text-[#3a8cd7] font-bold">7+ Active</span>
+                      </p>
+                    </div>
                   </div>
                   <div className="pt-3 border-t border-white/[0.05] flex justify-between items-center text-[10px] text-white/35 font-mono">
-                    <span>COMPLIANCE</span>
-                    <span className="text-white/60">100% On-Time</span>
+                    <span>ON-TIME SLA</span>
+                    <span className="text-white/70">100% Guaranteed</span>
                   </div>
                 </SpotlightCard>
               </TiltedCard>
@@ -559,14 +323,14 @@ function Works() {
                       <span className="text-[9px] font-mono text-white/40 tracking-wider">TECHNOLOGIES</span>
                     </div>
                     <div className="flex flex-wrap gap-1.5 mt-2">
-                      {["React", "Node", "TypeScript", "Next.js", "Flutter", "Tailwind"].map((t, i) => (
+                      {["React", "Node", "TypeScript", "Next.js", "Python", "Tailwind"].map((t, i) => (
                         <span key={i} className="text-[9px] font-semibold bg-white/5 border border-white/8 text-white/50 rounded-full px-2 py-0.5">{t}</span>
                       ))}
                     </div>
                   </div>
                   <div className="pt-3 border-t border-white/[0.05] flex justify-between items-center text-[10px] text-white/35 font-mono">
-                    <span>ARCHITECTURES</span>
-                    <span className="text-white/60">Custom Built</span>
+                    <span>SOURCE CODE</span>
+                    <span className="text-white/60">100% Client Owned</span>
                   </div>
                 </SpotlightCard>
               </TiltedCard>
@@ -581,28 +345,33 @@ function Works() {
             <div className="flex flex-wrap items-center gap-x-8 gap-y-2 text-white/45 font-mono">
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                <span>REGISTRY STATUS: MSME Registered</span>
+                <span>REGISTRY: MSME Registered</span>
               </div>
               <div className="flex items-center gap-2">
                 <span>ESTABLISHED: 2026</span>
               </div>
               <div className="flex items-center gap-2">
-                <span>DELIVERY METRICS:</span>
+                <span>WEBSITES COMPLETED:</span>
                 <span className="text-white font-black">
-                  <CountUp to={85} duration={1200} />% Client Retention
+                  <CountUp to={25} duration={1200} />+ Done
+                </span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span>AUTOMATION TOOLS:</span>
+                <span className="text-[#bfff00] font-black">
+                  <CountUp to={7} duration={1200} /> Active
                 </span>
               </div>
             </div>
             <div className="text-white/35 font-mono text-[10px] md:text-right w-full md:w-auto">
-              SYSTEM // ACTIVE_BUILDS_ONLINE
+              STATUS // ALL_SYSTEMS_OPERATIONAL
             </div>
           </div>
         </div>
 
       </section>
 
-
-
+      {/* ── BRAND NEEDS MARQUEE ── */}
       <section className="w-full bg-white py-16 border-t border-black/6">
         <div className="text-center mb-10 px-6">
           <h2 className="font-black uppercase text-black" style={{ fontSize: "clamp(28px,4vw,64px)", letterSpacing: "-1.2px", lineHeight: "0.95" }}>
@@ -614,11 +383,9 @@ function Works() {
         </div>
 
         <div className="relative overflow-hidden py-4">
-          {/* Gradient fade masks on left and right */}
           <div className="absolute inset-y-0 left-0 w-24 sm:w-36 bg-gradient-to-r from-white to-transparent pointer-events-none z-10" />
           <div className="absolute inset-y-0 right-0 w-24 sm:w-36 bg-gradient-to-l from-white to-transparent pointer-events-none z-10" />
 
-          {/* Continuous auto-scrolling track */}
           <div
             className="flex gap-6 works-auto-scroll cursor-grab active:cursor-grabbing"
             style={{
@@ -626,7 +393,6 @@ function Works() {
               width: "max-content",
             }}
           >
-            {/* Duplicate set 3 times for a perfectly seamless, infinite marquee loop */}
             {[...FEATURE_CARDS, ...FEATURE_CARDS, ...FEATURE_CARDS].map((card, idx) => (
               <article
                 key={idx}
@@ -656,12 +422,8 @@ function Works() {
 
           <style>{`
             @keyframes worksFeatureScroll {
-              0% {
-                transform: translateX(0);
-              }
-              100% {
-                transform: translateX(-33.333333%);
-              }
+              0% { transform: translateX(0); }
+              100% { transform: translateX(-33.333333%); }
             }
             .works-auto-scroll:hover {
               animation-play-state: paused;
@@ -670,382 +432,279 @@ function Works() {
         </div>
       </section>
 
-      {/* ── SHOWCASE SWITCHER NAVIGATION BAR ── */}
-      <div id="portfolio-tabs" className="sticky top-0 z-30 w-full bg-white/95 backdrop-blur-md border-t border-b border-black/10 py-4 px-6 sm:px-10 shadow-sm">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2.5">
-            <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="text-xs font-mono font-bold uppercase tracking-wider text-black">
-              Showcase Filter:
-            </span>
-            <span className="text-xs font-mono text-black/40 hidden sm:inline">
-              ({activeTab === "all" ? "All 31 Works" : activeTab === "websites" ? "24 Client Websites" : "7 Browser Extensions & Tools"})
-            </span>
-          </div>
-
-          {/* View Mode Pills */}
-          <div className="inline-flex p-1 bg-black/[0.06] rounded-full border border-black/10 shadow-inner">
-            <button
-              onClick={() => setActiveTab("all")}
-              className={`px-5 py-2 rounded-full text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
-                activeTab === "all"
-                  ? "bg-black text-white shadow-md scale-102"
-                  : "text-black/60 hover:text-black"
-              }`}
-            >
-              All Works (31)
-            </button>
-            <button
-              onClick={() => {
-                setActiveTab("websites");
-                document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className={`px-5 py-2 rounded-full text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer inline-flex items-center gap-1.5 ${
-                activeTab === "websites"
-                  ? "bg-black text-white shadow-md scale-102"
-                  : "text-black/60 hover:text-black"
-              }`}
-            >
-              <Globe size={13} className={activeTab === "websites" ? "text-emerald-400" : ""} />
-              Websites (24)
-            </button>
-            <button
-              onClick={() => {
-                setActiveTab("extensions");
-                document.getElementById("extensions")?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className={`px-5 py-2 rounded-full text-xs font-mono font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer inline-flex items-center gap-1.5 ${
-                activeTab === "extensions"
-                  ? "bg-[#bfff00] text-black shadow-md scale-102 font-black"
-                  : "text-black/70 hover:text-black"
-              }`}
-            >
-              <Puzzle size={13} className={activeTab === "extensions" ? "text-black" : "text-emerald-600"} />
-              Extensions &amp; Tools (7)
-            </button>
-          </div>
-
-          <div className="hidden lg:flex items-center gap-3 text-xs font-mono text-black/50">
-            <span className="flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-emerald-500" /> 24 Websites</span>
-            <span>&bull;</span>
-            <span className="flex items-center gap-1 text-black font-semibold"><span className="w-1.5 h-1.5 rounded-full bg-[#bfff00]" /> 7 Automation Tools</span>
-          </div>
-        </div>
-      </div>
-
-      {/* ── CLIENT WEBSITES SHOWCASE ── */}
-      {(activeTab === "all" || activeTab === "websites") && (
-        <section id="projects" className="relative w-full bg-white text-black overflow-hidden border-b border-black/10">
-          <div className="relative max-w-7xl mx-auto px-6 sm:px-10 md:px-16 py-20">
-            <div className="grid gap-10 xl:grid-cols-[0.95fr_1.05fr] items-start">
-              <div className="space-y-6">
-                <p className="text-[10px] uppercase tracking-[0.35em] text-[#22c55e]/90 font-mono font-bold">Featured Client Work</p>
-                <div>
-                  <h2 className="font-black uppercase tracking-[-0.04em] text-black" style={{ fontSize: "clamp(2.8rem,5vw,4.8rem)", lineHeight: "0.94" }}>
-                    WE TURN AMBITIONS INTO HIGH-PERFORMANCE<br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-teal-600 to-[#3a8cd7]">
-                      DIGITAL EXPERIENCES
-                    </span>
-                  </h2>
-                  <p className="mt-4 text-black/60 uppercase tracking-[0.22em] leading-[1.4] text-xs font-mono">
-                    VERIFIED LIVE WEBSITES &bull; GLOBAL CLIENT FOOTPRINT
-                  </p>
-                </div>
-
-                <p className="max-w-xl text-black/70 text-sm leading-relaxed">
-                  Every website built by Mirastra Tech is engineered for ultra-fast load times, responsive UI/UX, seamless lead capture, and immediate business impact. Click any site to visit the live deployment.
-                </p>
-
-                {/* Category Filter Pills */}
-                <div className="flex flex-wrap gap-2 pt-2">
-                  {CATEGORIES.map((cat) => {
-                    const count = cat === "All" ? WEBSITES_PORTFOLIO.length : WEBSITES_PORTFOLIO.filter(s => s.filterGroup === cat).length;
-                    const isActive = selectedCategory === cat;
-                    return (
-                      <button
-                        key={cat}
-                        onClick={() => setSelectedCategory(cat)}
-                        className={`rounded-full px-4 py-2 text-[10px] uppercase font-mono tracking-wider transition-all duration-200 cursor-pointer border ${
-                          isActive
-                            ? "bg-black text-white border-black shadow-md scale-105"
-                            : "bg-black/5 text-black/60 border-black/10 hover:bg-black/10 hover:text-black"
-                        }`}
-                      >
-                        {cat} ({count})
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* Top Featured Highlights */}
-              <div className="grid gap-4 sm:grid-cols-2">
-                <a
-                  href={WEBSITES_PORTFOLIO[0].url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative overflow-hidden rounded-[32px] border border-black/10 bg-black/5 shadow-[0_20px_60px_rgba(0,0,0,0.08)] block decoration-none"
-                >
-                  <img
-                    src={WEBSITES_PORTFOLIO[0].img}
-                    alt={WEBSITES_PORTFOLIO[0].title}
-                    className="h-[520px] w-full object-cover object-top transition duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
-                  <div className="absolute left-6 bottom-6 right-6 rounded-[24px] border border-white/20 bg-black/80 p-6 backdrop-blur-xl">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-[10px] uppercase font-mono tracking-[0.25em] text-[#bfff00] font-semibold">{WEBSITES_PORTFOLIO[0].category}</span>
-                      <span className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white group-hover:bg-[#bfff00] group-hover:text-black transition-colors">
-                        <ArrowUpRight size={15} />
-                      </span>
-                    </div>
-                    <h3 className="text-2xl font-black text-white leading-tight">{WEBSITES_PORTFOLIO[0].title}</h3>
-                    <p className="text-white/60 text-xs font-mono mt-1 flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                      {WEBSITES_PORTFOLIO[0].displayUrl}
-                    </p>
-                  </div>
-                </a>
-
-                <div className="grid gap-4">
-                  {/* Secondary Highlight 1 */}
-                  <a
-                    href={WEBSITES_PORTFOLIO[16].url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group relative overflow-hidden rounded-[28px] border border-black/10 bg-[#09090d] text-white p-6 flex flex-col justify-between shadow-lg decoration-none"
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="text-[10px] uppercase tracking-[0.25em] text-[#3a8cd7] font-mono">{WEBSITES_PORTFOLIO[16].category}</span>
-                      <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-white group-hover:bg-[#3a8cd7] transition-colors">
-                        <ArrowUpRight size={13} />
-                      </span>
-                    </div>
-                    <div className="my-4">
-                      <h4 className="text-xl font-black text-white leading-tight">{WEBSITES_PORTFOLIO[16].title}</h4>
-                      <p className="text-white/50 text-xs font-mono mt-1">{WEBSITES_PORTFOLIO[16].displayUrl}</p>
-                      <p className="text-white/60 text-xs mt-2 leading-relaxed">{WEBSITES_PORTFOLIO[16].desc}</p>
-                    </div>
-                    <div className="flex items-center gap-1.5 text-[10px] font-mono text-emerald-400">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                      Click to Open Live Platform →
-                    </div>
-                  </a>
-
-                  {/* Secondary Highlight 2 */}
-                  <a
-                    href={WEBSITES_PORTFOLIO[2].url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group relative overflow-hidden rounded-[28px] border border-black/10 bg-white shadow-[0_20px_60px_rgba(34,38,49,0.06)] decoration-none block"
-                  >
-                    <div className="relative h-[220px] overflow-hidden bg-zinc-100">
-                      <img
-                        src={WEBSITES_PORTFOLIO[2].img}
-                        alt={WEBSITES_PORTFOLIO[2].title}
-                        className="h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent" />
-                      <div className="absolute left-5 bottom-4 right-5 flex items-center justify-between text-white">
-                        <div>
-                          <p className="text-[9px] uppercase tracking-[0.25em] text-[#bfff00] font-mono">{WEBSITES_PORTFOLIO[2].category}</p>
-                          <h4 className="text-lg font-black text-white leading-tight mt-0.5">{WEBSITES_PORTFOLIO[2].title}</h4>
-                        </div>
-                        <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-colors">
-                          <ArrowUpRight size={13} />
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* All Live Websites Grid */}
-            <div className="mt-16">
-              <div className="flex items-center justify-between mb-8 pb-4 border-b border-black/10">
-                <div className="flex items-center gap-2">
-                  <Globe size={18} className="text-emerald-600" />
-                  <h3 className="text-xl font-bold font-mono uppercase tracking-wider text-black">
-                    Live Websites Portfolio ({filteredWebsites.length})
-                  </h3>
-                </div>
-                <span className="text-xs font-mono text-black/50 hidden sm:inline-block">
-                  All links redirect directly to live client domains
+      {/* ── TRACK RECORD & PROJECT COUNTS ── */}
+      <section id="track-record" className="w-full bg-white text-black py-20 px-6 sm:px-10 md:px-16 border-b border-black/10">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14 pb-8 border-b border-black/10">
+            <div>
+              <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-1.5 mb-4">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="text-emerald-700 text-[10px] font-mono tracking-[0.2em] uppercase font-bold">
+                  DELIVERY RECORD &bull; VERIFIED METRICS
                 </span>
               </div>
-
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {filteredWebsites.map((proj) => (
-                  <a
-                    key={proj.title}
-                    href={proj.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex flex-col justify-between overflow-hidden rounded-[28px] border border-black/10 bg-white shadow-[0_15px_35px_rgba(34,38,49,0.05)] transition-all duration-300 hover:border-[#3a8cd7]/50 hover:shadow-[0_25px_60px_rgba(58,140,215,0.18)] hover:-translate-y-1 decoration-none"
-                  >
-                    <div className="relative h-[250px] overflow-hidden bg-zinc-100">
-                      <img
-                        src={proj.img}
-                        alt={proj.title}
-                        className="h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
-                      <div className="absolute left-4 top-4 rounded-full bg-black/75 backdrop-blur-md px-3 py-1.5 text-[10px] uppercase font-mono tracking-wider text-white border border-white/10">
-                        {proj.category}
-                      </div>
-                      <div className="absolute right-4 top-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-black group-hover:bg-[#3a8cd7] group-hover:text-white transition-all shadow-md">
-                        <ArrowUpRight size={16} />
-                      </div>
-                    </div>
-                    <div className="p-6 flex flex-col flex-1 justify-between gap-4">
-                      <div>
-                        <div className="flex items-center gap-2 mb-2 text-emerald-600 font-mono text-[11px] font-semibold">
-                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                          <span>{proj.displayUrl}</span>
-                        </div>
-                        <h3 className="text-xl font-black text-black tracking-tight leading-snug group-hover:text-[#3a8cd7] transition-colors">
-                          {proj.title}
-                        </h3>
-                        <p className="text-black/60 text-xs leading-relaxed mt-2 line-clamp-2">
-                          {proj.desc}
-                        </p>
-                      </div>
-                      <div className="pt-4 border-t border-black/5 flex items-center justify-between text-xs font-semibold text-black/70 group-hover:text-black">
-                        <span className="inline-flex items-center gap-1.5 text-[11px] font-mono uppercase tracking-wider text-[#3a8cd7]">
-                          Visit Live Site <ArrowUpRight size={12} />
-                        </span>
-                        <span className="text-[10px] font-mono text-black/40">Verified Live</span>
-                      </div>
-                    </div>
-                  </a>
-                ))}
-              </div>
+              <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-black leading-none">
+                25+ WEBSITES DELIVERED &amp; <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-teal-600 to-[#3a8cd7]">
+                  PROVEN CLIENT MILESTONES
+                </span>
+              </h2>
             </div>
+            <p className="text-black/60 text-xs sm:text-sm font-mono max-w-md leading-relaxed">
+              We have designed, engineered, and launched over 25+ custom websites across diverse industries worldwide — built for ultra-fast load times, responsive UI/UX, seamless lead generation, and scalable architecture.
+            </p>
           </div>
-        </section>
-      )}
 
-      {/* ── BROWSER EXTENSIONS & AUTOMATION SECTION ── */}
-      {(activeTab === "all" || activeTab === "extensions") && (
-        <section id="extensions" className="relative w-full bg-[#07070a] text-white py-24 px-6 sm:px-10 md:px-16 border-t border-white/10 overflow-hidden">
-          {/* Ambient glow */}
-          <div className="absolute top-[20%] left-[-10%] w-[45vw] h-[45vw] rounded-full bg-[#bfff00]/5 blur-[140px] pointer-events-none z-0" />
-          <div className="absolute bottom-[10%] right-[-10%] w-[45vw] h-[45vw] rounded-full bg-[#3a8cd7]/10 blur-[130px] pointer-events-none z-0" />
-
-          <div className="relative z-10 max-w-7xl mx-auto">
-            {/* Section header */}
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12 pb-8 border-b border-white/10">
-              <div className="max-w-2xl">
-                <div className="inline-flex items-center gap-2 bg-[#bfff00]/10 border border-[#bfff00]/25 rounded-full px-4 py-1.5 mb-4">
-                  <Puzzle size={13} className="text-[#bfff00]" />
-                  <span className="text-[#bfff00] text-[10px] font-mono tracking-[0.2em] uppercase font-bold">
-                    PROPRIETARY BROWSER EXTENSIONS &amp; AUTOMATION TOOLS
-                  </span>
-                </div>
-                <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white leading-none">
-                  CHROME EXTENSIONS &amp; <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#bfff00] via-white to-white/60">
-                    GROWTH AUTOMATION TOOLS
-                  </span>
-                </h2>
-                <p className="text-white/50 text-xs sm:text-sm font-mono mt-4 leading-relaxed">
-                  High-performance, purpose-built browser extensions engineered to automate client outreach, lead scraping, scheduled content syndication, and distraction-free deep work.
+          {/* Big Stat Summary Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+            <div className="rounded-[24px] bg-[#f7f7f5] border border-black/8 p-7 flex flex-col justify-between hover:border-black/20 transition-all">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-black/40">Core Milestone</span>
+              <div className="my-6">
+                <span className="text-5xl font-black text-black tracking-tight flex items-baseline gap-1 font-mono">
+                  <CountUp to={25} duration={1200} />+
+                </span>
+                <h3 className="text-base font-bold text-black mt-2">Websites Delivered</h3>
+                <p className="text-black/50 text-xs leading-relaxed mt-1">
+                  High-converting corporate, dynamic, e-commerce, and booking platforms.
                 </p>
               </div>
+              <span className="text-[10px] font-mono text-emerald-600 font-semibold flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" /> 100% Custom Code
+              </span>
+            </div>
 
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
-                <div className="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-mono text-white/60">
-                  <span className="text-[#bfff00] font-bold">{EXTENSIONS.length}</span> Active Tools Deployed
-                </div>
-                <Link
-                  to="/contact"
-                  className="bg-[#bfff00] hover:bg-white text-black text-xs font-bold font-mono px-6 py-3 rounded-full uppercase tracking-wider transition-colors decoration-none"
-                >
-                  Build Custom Extension
-                </Link>
+            <div className="rounded-[24px] bg-[#f7f7f5] border border-black/8 p-7 flex flex-col justify-between hover:border-black/20 transition-all">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-black/40">Tooling &amp; SaaS</span>
+              <div className="my-6">
+                <span className="text-5xl font-black text-black tracking-tight flex items-baseline gap-1 font-mono">
+                  <CountUp to={7} duration={1200} />+
+                </span>
+                <h3 className="text-base font-bold text-black mt-2">Automation Engines</h3>
+                <p className="text-black/50 text-xs leading-relaxed mt-1">
+                  Chrome extensions, lead scrapers, and workflow pipelines.
+                </p>
+              </div>
+              <span className="text-[10px] font-mono text-[#3a8cd7] font-semibold flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#3a8cd7]" /> Active Production Tools
+              </span>
+            </div>
+
+            <div className="rounded-[24px] bg-[#f7f7f5] border border-black/8 p-7 flex flex-col justify-between hover:border-black/20 transition-all">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-black/40">Quality SLA</span>
+              <div className="my-6">
+                <span className="text-5xl font-black text-black tracking-tight flex items-baseline gap-1 font-mono">
+                  <CountUp to={100} duration={1200} />%
+                </span>
+                <h3 className="text-base font-bold text-black mt-2">On-Time Delivery</h3>
+                <p className="text-black/50 text-xs leading-relaxed mt-1">
+                  Agile two-week sprint cycles with guaranteed delivery checkpoints.
+                </p>
+              </div>
+              <span className="text-[10px] font-mono text-emerald-600 font-semibold flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" /> Zero Delivery Delays
+              </span>
+            </div>
+
+            <div className="rounded-[24px] bg-[#f7f7f5] border border-black/8 p-7 flex flex-col justify-between hover:border-black/20 transition-all">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-black/40">Industry Spread</span>
+              <div className="my-6">
+                <span className="text-5xl font-black text-black tracking-tight flex items-baseline gap-1 font-mono">
+                  <CountUp to={10} duration={1200} />+
+                </span>
+                <h3 className="text-base font-bold text-black mt-2">Industry Verticals</h3>
+                <p className="text-black/50 text-xs leading-relaxed mt-1">
+                  Travel, Healthcare, E-Commerce, SaaS, EdTech, Real Estate &amp; Exports.
+                </p>
+              </div>
+              <span className="text-[10px] font-mono text-black/50 font-semibold flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-black/40" /> Global Footprint
+              </span>
+            </div>
+          </div>
+
+          {/* Breakdown by Website Domain / Industry (Counts Only, No Client Names) */}
+          <div className="rounded-[28px] border border-black/10 bg-black text-white p-8 md:p-10">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 pb-6 border-b border-white/10">
+              <div>
+                <p className="text-[#bfff00] text-[10px] font-mono uppercase tracking-widest font-bold">Domain Breakdown</p>
+                <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-tight mt-1">
+                  Websites Done By Sector
+                </h3>
+              </div>
+              <div className="text-xs font-mono text-white/50">
+                Total: <span className="text-[#bfff00] font-bold">25+ Verified Websites Delivered</span>
               </div>
             </div>
 
-            {/* Extension Category Filters */}
-            <div className="flex flex-wrap gap-2 mb-10">
-              {EXT_CATEGORIES.map((cat) => {
-                const count = cat === "All" ? EXTENSIONS.length : EXTENSIONS.filter(e => e.category === cat).length;
-                const isActive = selectedExtCategory === cat;
-                return (
-                  <button
-                    key={cat}
-                    onClick={() => setSelectedExtCategory(cat)}
-                    className={`rounded-full px-4 py-2 text-[10px] uppercase font-mono tracking-wider transition-all duration-200 cursor-pointer border ${
-                      isActive
-                        ? "bg-[#bfff00] text-black border-[#bfff00] font-bold shadow-md scale-105"
-                        : "bg-white/5 text-white/60 border-white/10 hover:bg-white/10 hover:text-white"
-                    }`}
-                  >
-                    {cat} ({count})
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* Extension cards grid */}
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {filteredExtensions.map((ext, idx) => (
-                <div
-                  key={idx}
-                  className="group relative rounded-[28px] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-6 flex flex-col justify-between hover:border-[#bfff00]/40 hover:bg-white/[0.05] transition-all duration-300 shadow-2xl hover:-translate-y-1"
-                >
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { sector: "Travel, Tours & Hospitality", count: "5+ Websites", desc: "Custom international tour planners, luxury holiday packages, itinerary curators, and flight inquiry systems." },
+                { sector: "Healthcare & MedTech", count: "4+ Websites", desc: "Physiotherapy clinics, hospital mobility platforms, rehabilitation centers, and medical equipment rental systems." },
+                { sector: "E-Commerce & Fashion", count: "4+ Websites", desc: "High-conversion designer silk apparel stores, bespoke wedding couture, and wholesale garment catalog platforms." },
+                { sector: "Industrial, Manufacturing & Trade", count: "5+ Websites", desc: "Commercial import-export hubs, sustainable packaging manufacturing, and architectural metal installations." },
+                { sector: "Tech & SaaS Platforms", count: "4+ Websites", desc: "Automotive vehicle safety intelligence, cloud infrastructure portals, and multi-tenant billing engines." },
+                { sector: "Education & Media Publishing", count: "4+ Websites", desc: "Civil service coaching academies, real-time news outlets, and interactive language mastery training hubs." },
+              ].map((domain, i) => (
+                <div key={i} className="p-5 rounded-2xl bg-white/[0.04] border border-white/8 hover:border-[#bfff00]/30 transition-all flex flex-col justify-between">
                   <div>
-                    {/* Screenshot frame */}
-                    <div className="relative h-[220px] w-full rounded-2xl overflow-hidden bg-black/60 border border-white/10 mb-5">
-                      <img
-                        src={ext.img}
-                        alt={ext.title}
-                        className="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                      <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[9px] font-mono tracking-wider text-[#bfff00] border border-[#bfff00]/30 uppercase font-semibold">
-                        {ext.badge}
-                      </div>
-                      <div className="absolute bottom-3 left-3 flex items-center gap-1.5 text-[10px] font-mono text-white/80 bg-black/70 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/10">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#bfff00] animate-pulse" />
-                        Active Automation
-                      </div>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-[10px] font-mono text-[#bfff00] uppercase tracking-wider font-semibold">Sector 0{i + 1}</span>
+                      <span className="text-xs font-mono font-bold bg-[#bfff00]/15 text-[#bfff00] border border-[#bfff00]/30 px-2.5 py-0.5 rounded-full">
+                        {domain.count}
+                      </span>
                     </div>
-
-                    {/* Meta */}
-                    <p className="text-[10px] uppercase tracking-[0.25em] text-white/40 font-mono mb-1">{ext.category}</p>
-                    <h3 className="text-xl font-black text-white group-hover:text-[#bfff00] transition-colors">{ext.title}</h3>
-                    <p className="text-white/60 text-xs font-mono leading-relaxed mt-2.5">{ext.desc}</p>
-
-                    {/* Feature Bullets */}
-                    <div className="mt-4 pt-4 border-t border-white/5 space-y-1.5">
-                      {ext.features.map((feat, fIdx) => (
-                        <div key={fIdx} className="flex items-center gap-2 text-[11px] text-white/70 font-mono">
-                          <span className="w-1 h-1 rounded-full bg-[#bfff00]" />
-                          <span>{feat}</span>
-                        </div>
-                      ))}
-                    </div>
+                    <h4 className="text-base font-bold text-white tracking-tight mt-1">{domain.sector}</h4>
+                    <p className="text-white/50 text-xs leading-relaxed mt-2">{domain.desc}</p>
                   </div>
-
-                  {/* Action button */}
-                  <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
-                    <span className="text-[10px] font-mono text-white/40 uppercase tracking-wider">Ready to deploy</span>
-                    <Link
-                      to="/contact"
-                      className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-[#bfff00] hover:text-white transition-colors decoration-none"
-                    >
-                      Inquire Extension <ArrowUpRight size={13} />
-                    </Link>
+                  <div className="mt-4 pt-3 border-t border-white/5 flex items-center gap-1.5 text-[10px] font-mono text-emerald-400">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" /> Fully Completed &amp; Live
                   </div>
                 </div>
               ))}
             </div>
           </div>
-        </section>
-      )}
+        </div>
+      </section>
+
+      {/* ── SHOWCASE NAVIGATION BAR ── */}
+      <div id="portfolio-tabs" className="sticky top-0 z-30 w-full bg-white/95 backdrop-blur-md border-t border-b border-black/10 py-4 px-6 sm:px-10 shadow-sm">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-2.5">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#bfff00] shadow-[0_0_6px_rgba(191,255,0,0.8)] animate-pulse" />
+            <span className="text-xs font-mono font-bold uppercase tracking-wider text-black">
+              Proprietary Tools &amp; Automation
+            </span>
+            <span className="text-xs font-mono text-black/50 hidden sm:inline">
+              ({EXTENSIONS.length} Active Extensions &amp; Growth Tools)
+            </span>
+          </div>
+
+          <div className="flex items-center gap-3 text-xs font-mono text-black/60">
+            <span className="flex items-center gap-1.5 text-black font-semibold">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" /> All Tools Live &amp; Ready to Deploy
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* ── BROWSER EXTENSIONS & AUTOMATION SECTION ── */}
+      <section id="extensions" className="relative w-full bg-[#07070a] text-white py-24 px-6 sm:px-10 md:px-16 border-t border-white/10 overflow-hidden">
+        {/* Ambient glow */}
+        <div className="absolute top-[20%] left-[-10%] w-[45vw] h-[45vw] rounded-full bg-[#bfff00]/5 blur-[140px] pointer-events-none z-0" />
+        <div className="absolute bottom-[10%] right-[-10%] w-[45vw] h-[45vw] rounded-full bg-[#3a8cd7]/10 blur-[130px] pointer-events-none z-0" />
+
+        <div className="relative z-10 max-w-7xl mx-auto">
+          {/* Section header */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12 pb-8 border-b border-white/10">
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2 bg-[#bfff00]/10 border border-[#bfff00]/25 rounded-full px-4 py-1.5 mb-4">
+                <Puzzle size={13} className="text-[#bfff00]" />
+                <span className="text-[#bfff00] text-[10px] font-mono tracking-[0.2em] uppercase font-bold">
+                  PROPRIETARY BROWSER EXTENSIONS &amp; AUTOMATION TOOLS
+                </span>
+              </div>
+              <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white leading-none">
+                CHROME EXTENSIONS &amp; <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#bfff00] via-white to-white/60">
+                  GROWTH AUTOMATION TOOLS
+                </span>
+              </h2>
+              <p className="text-white/50 text-xs sm:text-sm font-mono mt-4 leading-relaxed">
+                High-performance, purpose-built browser extensions engineered to automate client outreach, lead scraping, scheduled content syndication, and distraction-free deep work.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+              <div className="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-mono text-white/60">
+                <span className="text-[#bfff00] font-bold">{EXTENSIONS.length}</span> Active Tools Deployed
+              </div>
+              <Link
+                to="/contact"
+                className="bg-[#bfff00] hover:bg-white text-black text-xs font-bold font-mono px-6 py-3 rounded-full uppercase tracking-wider transition-colors decoration-none"
+              >
+                Build Custom Extension
+              </Link>
+            </div>
+          </div>
+
+          {/* Extension Category Filters */}
+          <div className="flex flex-wrap gap-2 mb-10">
+            {EXT_CATEGORIES.map((cat) => {
+              const count = cat === "All" ? EXTENSIONS.length : EXTENSIONS.filter(e => e.category === cat).length;
+              const isActive = selectedExtCategory === cat;
+              return (
+                <button
+                  key={cat}
+                  onClick={() => setSelectedExtCategory(cat)}
+                  className={`rounded-full px-4 py-2 text-[10px] uppercase font-mono tracking-wider transition-all duration-200 cursor-pointer border ${
+                    isActive
+                      ? "bg-[#bfff00] text-black border-[#bfff00] font-bold shadow-md scale-105"
+                      : "bg-white/5 text-white/60 border-white/10 hover:bg-white/10 hover:text-white"
+                  }`}
+                >
+                  {cat} ({count})
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Extension cards grid */}
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {filteredExtensions.map((ext, idx) => (
+              <div
+                key={idx}
+                className="group relative rounded-[28px] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-6 flex flex-col justify-between hover:border-[#bfff00]/40 hover:bg-white/[0.05] transition-all duration-300 shadow-2xl hover:-translate-y-1"
+              >
+                <div>
+                  {/* Screenshot frame */}
+                  <div className="relative h-[220px] w-full rounded-2xl overflow-hidden bg-black/60 border border-white/10 mb-5">
+                    <img
+                      src={ext.img}
+                      alt={ext.title}
+                      className="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                    <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[9px] font-mono tracking-wider text-[#bfff00] border border-[#bfff00]/30 uppercase font-semibold">
+                      {ext.badge}
+                    </div>
+                    <div className="absolute bottom-3 left-3 flex items-center gap-1.5 text-[10px] font-mono text-white/80 bg-black/70 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/10">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#bfff00] animate-pulse" />
+                      Active Automation
+                    </div>
+                  </div>
+
+                  {/* Meta */}
+                  <p className="text-[10px] uppercase tracking-[0.25em] text-white/40 font-mono mb-1">{ext.category}</p>
+                  <h3 className="text-xl font-black text-white group-hover:text-[#bfff00] transition-colors">{ext.title}</h3>
+                  <p className="text-white/60 text-xs font-mono leading-relaxed mt-2.5">{ext.desc}</p>
+
+                  {/* Feature Bullets */}
+                  <div className="mt-4 pt-4 border-t border-white/5 space-y-1.5">
+                    {ext.features.map((feat, fIdx) => (
+                      <div key={fIdx} className="flex items-center gap-2 text-[11px] text-white/70 font-mono">
+                        <span className="w-1 h-1 rounded-full bg-[#bfff00]" />
+                        <span>{feat}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Action button */}
+                <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                  <span className="text-[10px] font-mono text-white/40 uppercase tracking-wider">Ready to deploy</span>
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-[#bfff00] hover:text-white transition-colors decoration-none"
+                  >
+                    Inquire Extension <ArrowUpRight size={13} />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* 5. CTA SECTION */}
       <section className="w-full bg-black px-6 sm:px-12 md:px-20 py-12 relative z-10 mt-6">
@@ -1135,7 +794,6 @@ function Works() {
 
       {/* 6. HOMEPAGE FOOTER INTEGRATION */}
       <footer className="w-full bg-black relative overflow-hidden border-t border-white/5">
-        {/* Giant brand name */}
         <div className="relative w-full overflow-hidden select-none" style={{ lineHeight: 0.85 }}>
           <h2
             className="font-black text-center w-full px-4"
@@ -1151,15 +809,12 @@ function Works() {
           >
             Mirastra
           </h2>
-          {/* Bottom fade into black */}
           <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent pointer-events-none" />
         </div>
 
-        {/* Bottom info bar */}
         <div className="relative z-10 border-t border-white/6 px-8 sm:px-12 md:px-16 py-12">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10">
 
-            {/* Col 1: logo + address + status + socials */}
             <div className="md:col-span-3 flex flex-col gap-5">
               <img
                 src="/mirastra_wlogo.png"
@@ -1174,13 +829,11 @@ function Works() {
                 </p>
               </div>
               
-              {/* Status pill */}
               <div className="inline-flex items-center gap-2 bg-white/5 border border-white/8 rounded-full px-3 py-1.5 self-start">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shadow-[0_0_4px_rgba(52,211,153,0.8)] animate-pulse" />
                 <span className="text-white/50 text-[10px] font-mono uppercase tracking-wider">All systems operational</span>
               </div>
               
-              {/* Social links */}
               <div className="flex items-center gap-3">
                 {[
                   { label: "FB", href: "https://www.facebook.com/profile.php?id=61590068837109", icon: <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg> },
@@ -1193,9 +846,7 @@ function Works() {
               </div>
             </div>
 
-            {/* Nav columns */}
             <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-8">
-              {/* Services Column */}
               <div className="flex flex-col gap-3">
                 <p className="text-white/60 text-[11px] font-semibold uppercase tracking-[0.18em] font-mono">Services</p>
                 <Link to="/services" className="text-white/28 text-xs hover:text-white/70 transition-colors decoration-none leading-snug">Website Development</Link>
@@ -1204,7 +855,6 @@ function Works() {
                 <Link to="/services" className="text-white/28 text-xs hover:text-white/70 transition-colors decoration-none leading-snug">Custom Software</Link>
                 <Link to="/services" className="text-white/28 text-xs hover:text-white/70 transition-colors decoration-none leading-snug">Browser Extensions</Link>
               </div>
-              {/* Solutions Column */}
               <div className="flex flex-col gap-3">
                 <p className="text-white/60 text-[11px] font-semibold uppercase tracking-[0.18em] font-mono">Solutions</p>
                 <Link to="/services" className="text-white/28 text-xs hover:text-white/70 transition-colors decoration-none leading-snug">Automation</Link>
@@ -1213,14 +863,12 @@ function Works() {
                 <Link to="/services" className="text-white/28 text-xs hover:text-white/70 transition-colors decoration-none leading-snug">UI/UX Design</Link>
                 <Link to="/contact" className="text-white/28 text-xs hover:text-white/70 transition-colors decoration-none leading-snug">Consulting</Link>
               </div>
-              {/* Company Column */}
               <div className="flex flex-col gap-3">
                 <p className="text-white/60 text-[11px] font-semibold uppercase tracking-[0.18em] font-mono">Company</p>
                 <Link to="/about" className="text-white/28 text-xs hover:text-white/70 transition-colors decoration-none leading-snug">About Us</Link>
                 <Link to="/works" className="text-white/28 text-xs hover:text-white/70 transition-colors decoration-none leading-snug">Our Works</Link>
                 <Link to="/contact" className="text-white/28 text-xs hover:text-white/70 transition-colors decoration-none leading-snug">Contact</Link>
               </div>
-              {/* Legal Column */}
               <div className="flex flex-col gap-3">
                 <p className="text-white/60 text-[11px] font-semibold uppercase tracking-[0.18em] font-mono">Legal</p>
                 <span className="text-white/28 text-xs leading-snug cursor-default">Privacy Policy</span>
@@ -1230,7 +878,6 @@ function Works() {
               </div>
             </div>
 
-            {/* Right contact links */}
             <div className="md:col-span-2 flex flex-col gap-3 items-end justify-start">
               <a
                 href="mailto:mirastratech@gmail.com"
@@ -1252,7 +899,6 @@ function Works() {
 
           </div>
 
-          {/* Bottom copyright strip */}
           <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-white/20 text-[10px] font-mono uppercase tracking-widest">
               © 2026 Mirastra Tech — MSME Registered
